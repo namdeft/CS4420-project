@@ -1,7 +1,7 @@
 import { db } from "../connect.js";
 
-export const getCourses = (req, res) => {
-  const query = "SELECT * FROM course"
+export const getIngredients = (req, res) => {
+  const query = "SELECT * FROM ingredient"
 
   db.query(query, (err, data) => {
     if (err) return err;
